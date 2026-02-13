@@ -137,11 +137,12 @@ fun taskTwo()
 
     while(true) {
 
-        print("\n My Movie Manager App\n")
+        print("\n |My Movie Manager App|\n")
         print("1. Add Movie\n")
         print("2. Remove Movie\n")
         print("3. Update Movie\n")
         print("4. View Movies\n")
+        print("5. Exit\n")
         var choice:Int?=readLine()?.toIntOrNull()
         when (choice) {
             1->{
@@ -170,6 +171,11 @@ fun taskTwo()
                 viewMovies()
 
             }
+            5 -> {
+                println("Goodbye!")
+                return
+            }
+            else -> println("Invalid choice! Please enter a number between 1-5.")
         }
     }
 
